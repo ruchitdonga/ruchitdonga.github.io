@@ -1,79 +1,92 @@
-# 🎮 Ruchit Donga  
-### B.Tech in Artificial Intelligence & Machine Learning @ Atlas SkillTech University  
-**AI | Cloud | Full-Stack | Gamer**
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?size=32&duration=3000&color=7F3ACE&center=true&vCenter=true&width=600&lines=Ruchit+Donga;AI+%26+ML+Engineer;Cloud+%7C+Web+%7C+Gamer" />
+</p>
 
 ---
 
-## 💫 About Me
-- 🎓 Currently pursuing **B.Tech in AI & ML**
-- ⚡ Building real-world projects in **AI, Web & Cloud**
-- 🎮 Hardcore Gamer & Game-Dev Explorer  
-- 🚀 Passionate about automation, system design & scalable tech
+## 🧠 About Me
+
+🎓 B.Tech in **Artificial Intelligence & Machine Learning**  
+🏫 *Atlas SkillTech University*  
+🎮 Gamer • ⚡ Cloud Builder • 🚀 Full-Stack Developer  
 
 ---
 
 ## 🌐 Connect With Me
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ruchit_Donga-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/ruchit-donga-2637a7256/)
+
+<p align="center">
+<a href="https://www.linkedin.com/in/ruchit-donga-2637a7256/">
+  <img src="https://img.shields.io/badge/LinkedIn-Ruchit_Donga-blue?style=for-the-badge&logo=linkedin"/>
+</a>
+</p>
 
 ---
 
 ## 💻 Tech Stack
 
-### 🧠 AI / Data Science  
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![NumPy](https://img.shields.io/badge/numpy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-white?style=for-the-badge&logo=Matplotlib&logoColor=black)
-![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
+<p align="center">
 
-### 🌐 Web / Backend  
-![HTML5](https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-323330?style=for-the-badge&logo=javascript)
-![TypeScript](https://img.shields.io/badge/typescript-007ACC?style=for-the-badge&logo=typescript)
-![Firebase](https://img.shields.io/badge/firebase-039BE5?style=for-the-badge&logo=firebase)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-4ea94b?style=for-the-badge&logo=mongodb&logoColor=white)
-![MySQL](https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+**AI / Data Science**
 
-### ☁️ Cloud / DevOps  
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazon-aws)
-![Azure](https://img.shields.io/badge/azure-0072C6?style=for-the-badge&logo=microsoftazure&logoColor=white)
-![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white)
-![Vercel](https://img.shields.io/badge/vercel-black?style=for-the-badge&logo=vercel)
-![Netlify](https://img.shields.io/badge/netlify-black?style=for-the-badge&logo=netlify)
+<img src="https://skillicons.dev/icons?i=python,numpy,pandas,sklearn&theme=dark"/>
 
-### 🎮 Gaming Tech  
-![Riot Games](https://img.shields.io/badge/riotgames-D32936?style=for-the-badge&logo=riotgames&logoColor=white)
-![Epic Games](https://img.shields.io/badge/epicgames-313131?style=for-the-badge&logo=epicgames&logoColor=white)
-![NVIDIA](https://img.shields.io/badge/nvidia-76B900?style=for-the-badge&logo=nvidia&logoColor=white)
+**Web / Backend**
+
+<img src="https://skillicons.dev/icons?i=html,js,ts,firebase,supabase,mongodb,mysql&theme=dark"/>
+
+**Cloud / DevOps**
+
+<img src="https://skillicons.dev/icons?i=aws,azure,vercel,netlify,cloudflare,githubactions&theme=dark"/>
+
+**Gaming Tech**
+
+<img src="https://img.shields.io/badge/Riot_Games-D32936?style=for-the-badge&logo=riotgames"/>
+<img src="https://img.shields.io/badge/Epic_Games-313131?style=for-the-badge&logo=epicgames"/>
+<img src="https://img.shields.io/badge/NVIDIA-76B900?style=for-the-badge&logo=nvidia"/>
+
+</p>
 
 ---
 
-## 📊 GitHub Stats
-![](https://github-readme-stats.vercel.app/api?username=ruchitdonga&theme=aura&show_icons=true&count_private=true)  
-![](https://nirzak-streak-stats.vercel.app/?user=ruchitdonga&theme=aura)  
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=ruchitdonga&layout=compact&theme=aura)
+## 📊 GitHub Performance
+
+<p align="center">
+  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=ruchitdonga&show_icons=true&theme=radical"/>
+  <img width="49%" src="https://nirzak-streak-stats.vercel.app/?user=ruchitdonga&theme=radical"/>
+</p>
+
+<p align="center">
+  <img width="45%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ruchitdonga&layout=compact&theme=radical"/>
+</p>
 
 ---
 
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=ruchitdonga&theme=github_dark&margin-w=8)
+## 🏆 Achievements
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=ruchitdonga&theme=algolia&row=1&margin-w=15"/>
+</p>
 
 ---
 
 ## ✍️ Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
+
+<p align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight"/>
+</p>
 
 ---
 
 ## 🔝 Top Contributions
-![](https://github-contributor-stats.vercel.app/api?username=ruchitdonga&limit=5&theme=shadow_red)
+
+<p align="center">
+  <img src="https://github-contributor-stats.vercel.app/api?username=ruchitdonga&limit=5&theme=radical"/>
+</p>
 
 ---
 
-![Profile Views](https://visitcount.itsvg.in/api?id=ruchitdonga&icon=0&color=6)
+<p align="center">
+  <img src="https://visitcount.itsvg.in/api?id=ruchitdonga&color=6"/>
+</p>
 
----
-
-> ⚔️ *"I don’t just write code — I build systems that scale, automate & dominate."*
+> ⚔️ *"I don't just write code — I engineer systems that scale, automate & dominate."*
