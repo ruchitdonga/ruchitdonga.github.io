@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=32&duration=3000&color=7F3ACE&center=true&vCenter=true&width=600&lines=Ruchit+Donga;AI+%26+ML+Engineer;Cloud+%7C+Web+%7C+Gamer" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:7F00FF,100:E100FF&height=200&section=header&text=Ruchit%20Donga&fontSize=40&fontColor=ffffff&animation=fadeIn" />
 </p>
 
 ---
