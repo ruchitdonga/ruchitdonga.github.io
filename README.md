@@ -1,6 +1,6 @@
 # 💫 About Me:
-i m currently pursuing btech in ai and ml at atlas skilltech university
-
+i am currently pursuing btech in ai and ml at atlas skilltech university
+Gamer
 
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/ruchit-donga-2637a7256/) 
