@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — {{ cv.name }}</title>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        .cs-contact-panel { max-width:680px; margin:40px auto; padding:28px; }
+        .cs-contact-item { margin:10px 0; }
+    </style>
+</head>
+
+<body>
+    <canvas id="cs-particles" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: -1;"></canvas>
+    <div class="cs-background"></div>
+    <div id="cs-crosshair">
+        <div class="cs-line cs-top"></div>
+        <div class="cs-line cs-right"></div>
+        <div class="cs-line cs-bottom"></div>
+        <div class="cs-line cs-left"></div>
+    </div>
+
+    <div class="cs-container">
+        <header class="cs-header">
+            <div class="cs-logo">
+                <i class="fa-solid fa-shield-halved" style="color: var(--cs-ct-blue); margin-right: 10px;"></i>
+                <span>{{ cv.name.split(' ')[0] }}</span>
+            </div>
+            <nav class="cs-nav">
+                <a href="{{ url_for('home') }}#profile" class="cs-nav-item"><i class="fa-solid fa-user"></i> PROFILE</a>
+                <a href="{{ url_for('home') }}#loadout" class="cs-nav-item"><i class="fa-solid fa-gun"></i> LOADOUT</a>
+                <a href="{{ url_for('home') }}#arsenal" class="cs-nav-item"><i class="fa-solid fa-crosshairs"></i> ARSENAL</a>
+                <a href="{{ url_for('home') }}#history" class="cs-nav-item"><i class="fa-solid fa-clock-rotate-left"></i> HISTORY</a>
+            </nav>
+            <div class="cs-user-menu">
+                <div class="cs-rankbox">GLOBAL ELITE DEV</div>
+                <a href="{{ cv.github }}" class="cs-btn-connect" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+                <a href="{{ url_for('home') }}" class="cs-btn-connect"><i class="fa-solid fa-arrow-left"></i>
+                    BACK</a>
+            </div>
+        </header>
+
+        <div class="cs-content-wrapper">
+            <div class="cs-main-panels">
+                <section id="contact" class="cs-section scroll-hidden slide-up">
+                    <div class="cs-section-header">
+                        <h2><i class="fa-solid fa-address-card"></i> CONTACT</h2>
+                        <div class="cs-header-line"></div>
+                    </div>
+                    <div class="cs-contact-panel cs-glass-panel">
+                        <h3>Contact — {{ cv.name }}</h3>
+                        <div class="cs-contact-item"><strong>Email:</strong> <a href="mailto:{{ cv.email }}">{{ cv.email }}</a></div>
+                        <div class="cs-contact-item"><strong>Phone:</strong> {{ cv.phone }}</div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>

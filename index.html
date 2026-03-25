@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS2 | RUCHIT DONGA | PROFILE</title>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Rajdhani for CS headers, Inter for body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rajdhani:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <!-- Canvas for Particle Background -->
+    <canvas id="cs-particles"
+        style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: -1;"></canvas>
+
+    <!-- Cinematic Background -->
+    <div class="cs-background"></div>
+
+    <!-- Custom Crosshair -->
+    <div id="cs-crosshair">
+        <div class="cs-line cs-top"></div>
+        <div class="cs-line cs-right"></div>
+        <div class="cs-line cs-bottom"></div>
+        <div class="cs-line cs-left"></div>
+    </div>
+
+    <!-- Main Game Container -->
+    <div class="cs-container">
+
+        <!-- Top Menu NavBar -->
+        <header class="cs-header">
+            <div class="cs-logo">
+                <i class="fa-solid fa-shield-halved" style="color: var(--cs-ct-blue); margin-right: 10px;"></i>
+                <span>RUCHIT</span>
+            </div>
+            <nav class="cs-nav">
+                <a href="#profile" class="cs-nav-item active"><i class="fa-solid fa-user"></i> PROFILE</a>
+                <a href="#loadout" class="cs-nav-item"><i class="fa-solid fa-gun"></i> LOADOUT</a>
+                <a href="#arsenal" class="cs-nav-item"><i class="fa-solid fa-crosshairs"></i> ARSENAL</a>
+                <a href="#history" class="cs-nav-item"><i class="fa-solid fa-clock-rotate-left"></i> HISTORY</a>
+            </nav>
+            <div class="cs-user-menu">
+                <div class="cs-rankbox">GLOBAL ELITE DEV</div>
+                <a href="https://github.com/ruchitdonga" class="cs-btn-connect" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+                <a href="contact.html" class="cs-btn-connect"><i class="fa-solid fa-satellite-dish"></i>
+                    CONNECT</a>
+            </div>
+        </header>
+
+        <div class="cs-content-wrapper">
+            <!-- Left Side / Player Model Area (Hero) -->
+            <section id="profile" class="cs-hero scroll-hidden">
+                <div class="cs-hero-panel cs-glass-panel">
+                    <h1 class="cs-player-name">RUCHIT DONGA</h1>
+                    <h2 class="cs-player-title"><i class="fa-solid fa-star"></i> Backend Developer | Django • REST APIs • AI Integration</h2>
+                    <p class="cs-player-desc">Backend-focused software developer specializing in Django and REST API architecture with experience building AI-integrated systems. Strong emphasis on structured backend design, API contracts, and scalable service architecture. Experienced working in collaborative environments alongside frontend and ML engineers to deliver production-ready applications.</p>
+
+                    <div class="cs-stats-row">
+                        
+                        <div class="cs-stat-box">
+                            <span class="cs-stat-label">SKILL</span>
+                            <span class="cs-stat-value">Backend system design and API structuring</span>
+                        </div>
+                        
+                        <div class="cs-stat-box">
+                            <span class="cs-stat-label">SKILL</span>
+                            <span class="cs-stat-value">Clear separation between backend, ML, and frontend responsibilities</span>
+                        </div>
+                        
+                        <div class="cs-stat-box">
+                            <span class="cs-stat-label">SKILL</span>
+                            <span class="cs-stat-value">Problem decomposition and structured development workflow</span>
+                        </div>
+                        
+                        <div class="cs-stat-box">
+                            <span class="cs-stat-label">SKILL</span>
+                            <span class="cs-stat-value">Strong debugging and integration skills</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <!-- Right Side Content Area -->
+            <div class="cs-main-panels">
+
+                <!-- Technical Expertise (Loadout) -->
+                <section id="loadout" class="cs-section scroll-hidden slide-right">
+                    <div class="cs-section-header">
+                        <h2><i class="fa-solid fa-briefcase"></i> LOADOUT / EXPERTISE</h2>
+                        <div class="cs-header-line"></div>
+                    </div>
+                    <div class="cs-loadout-grid">
+                        
+                        <div
+                            class="cs-glass-panel cs-loadout-item scroll-hidden stagger-1">
+                            <h3>Languages</h3>
+                            <div class="cs-skill-tags">
+                                
+                                <span class="cs-tag">Python</span>
+                                
+                                <span class="cs-tag">Java</span>
+                                
+                                <span class="cs-tag">SQL</span>
+                                
+                                <span class="cs-tag">JavaScript (basic)</span>
+                                
+                            </div>
+                        </div>
+                        
+                        <div
+                            class="cs-glass-panel cs-loadout-item scroll-hidden stagger-2">
+                            <h3>Backend</h3>
+                            <div class="cs-skill-tags">
+                                
+                                <span class="cs-tag">Django</span>
+                                
+                                <span class="cs-tag">Django REST Framework (DRF)</span>
+                                
+                                <span class="cs-tag">REST API Design</span>
+                                
+                            </div>
+                        </div>
+                        
+                        <div
+                            class="cs-glass-panel cs-loadout-item scroll-hidden stagger-3">
+                            <h3>AI/Data</h3>
+                            <div class="cs-skill-tags">
+                                
+                                <span class="cs-tag">ML integration workflows</span>
+                                
+                                <span class="cs-tag">Rule-based decision systems</span>
+                                
+                                <span class="cs-tag">Local LLM integration concepts</span>
+                                
+                            </div>
+                        </div>
+                        
+                        <div
+                            class="cs-glass-panel cs-loadout-item scroll-hidden stagger-4">
+                            <h3>Web</h3>
+                            <div class="cs-skill-tags">
+                                
+                                <span class="cs-tag">HTML</span>
+                                
+                                <span class="cs-tag">CSS</span>
+                                
+                                <span class="cs-tag">Flask (basic full-stack apps)</span>
+                                
+                            </div>
+                        </div>
+                        
+                        <div
+                            class="cs-glass-panel cs-loadout-item scroll-hidden stagger-5">
+                            <h3>Big Data</h3>
+                            <div class="cs-skill-tags">
+                                
+                                <span class="cs-tag">Hadoop</span>
+                                
+                                <span class="cs-tag">HDFS</span>
+                                
+                                <span class="cs-tag">MapReduce</span>
+                                
+                                <span class="cs-tag">Hive</span>
+                                
+                            </div>
+                        </div>
+                        
+                        <div
+                            class="cs-glass-panel cs-loadout-item scroll-hidden stagger-6">
+                            <h3>Tools</h3>
+                            <div class="cs-skill-tags">
+                                
+                                <span class="cs-tag">Git</span>
+                                
+                                <span class="cs-tag">GitHub</span>
+                                
+                                <span class="cs-tag">Swagger/OpenAPI</span>
+                                
+                                <span class="cs-tag">Docker (basic)</span>
+                                
+                                <span class="cs-tag">VS Code</span>
+                                
+                            </div>
+                        </div>
+                        
+                        <div
+                            class="cs-glass-panel cs-loadout-item scroll-hidden stagger-6">
+                            <h3>Databases</h3>
+                            <div class="cs-skill-tags">
+                                
+                                <span class="cs-tag">SQLite</span>
+                                
+                                <span class="cs-tag">PostgreSQL (conceptual)</span>
+                                
+                            </div>
+                        </div>
+                        
+                        <div
+                            class="cs-glass-panel cs-loadout-item scroll-hidden stagger-6">
+                            <h3>Environment</h3>
+                            <div class="cs-skill-tags">
+                                
+                                <span class="cs-tag">Windows</span>
+                                
+                                <span class="cs-tag">Linux CLI</span>
+                                
+                                <span class="cs-tag">Miniconda</span>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+
+                <!-- Projects (Arsenal) -->
+                <section id="arsenal" class="cs-section scroll-hidden slide-up">
+                    <div class="cs-section-header">
+                        <h2><i class="fa-solid fa-crosshairs"></i> RECENT DEPLOYMENTS</h2>
+                        <div class="cs-header-line"></div>
+                    </div>
+                    <div class="cs-arsenal-list">
+                        
+                        <div
+                            class="cs-glass-panel cs-project-card scroll-hidden stagger-1">
+                            <div class="cs-project-top">
+                                <h3>AI-Based Crop Recommendation System</h3>
+                                <span class="cs-status-indicator active">ONLINE</span>
+                            </div>
+                            <p class="cs-project-desc">Designed scalable backend architecture for AI-powered crop prediction.</p>
+                            <div class="cs-project-tech">
+                                
+                                <span>Django</span>
+                                 • 
+                                
+                                <span>DRF</span>
+                                 • 
+                                
+                                <span>Python</span>
+                                 • 
+                                
+                                <span>Swagger</span>
+                                
+                                
+                            </div>
+                            <div class="cs-project-actions">
+                                
+                                
+                                
+                                <a href="https://ai-crop-advisor-three.vercel.app" class="cs-btn-view" target="_blank" rel="noopener">LIVE <i class="fa-solid fa-globe"></i></a>
+                                
+                                
+                            </div>
+                        </div>
+                        
+                        <div
+                            class="cs-glass-panel cs-project-card scroll-hidden stagger-2">
+                            <div class="cs-project-top">
+                                <h3>Construction Site Material Tracker</h3>
+                                <span class="cs-status-indicator active">ONLINE</span>
+                            </div>
+                            <p class="cs-project-desc">Built an inventory and materials tracking system for construction sites.</p>
+                            <div class="cs-project-tech">
+                                
+                                <span>Flask</span>
+                                 • 
+                                
+                                <span>SQLite</span>
+                                 • 
+                                
+                                <span>JavaScript</span>
+                                 • 
+                                
+                                <span>Bootstrap</span>
+                                
+                                
+                            </div>
+                            <div class="cs-project-actions">
+                                
+                                
+                                
+                                <a href="https://sahajajanand.firebaseapp.com/" class="cs-btn-view" target="_blank" rel="noopener">LIVE <i class="fa-solid fa-globe"></i></a>
+                                
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+
+                <!-- Experience (Match History) -->
+                <section id="history" class="cs-section scroll-hidden slide-left">
+                    <div class="cs-section-header">
+                        <h2><i class="fa-solid fa-clock-rotate-left"></i> SERVICE RECORD</h2>
+                        <div class="cs-header-line"></div>
+                    </div>
+                    <div class="cs-history-list">
+                        
+                        <div
+                            class="cs-glass-panel cs-match-card scroll-hidden stagger-1">
+                            <div class="cs-match-header">
+                                <h3 class="cs-match-role">Machine Learning Intern</h3>
+                                <span class="cs-match-result">WIN • (July 2024 – July 2024)</span>
+                            </div>
+                            <h4 class="cs-match-map"><i class="fa-solid fa-map-location-dot"></i> Cognifyz Technologies</h4>
+                            <ul class="cs-match-details">
+                                
+                                <li>Worked on machine learning workflows including data preprocessing, feature engineering, and model experimentation.</li>
+                                
+                                <li>Built and evaluated ML models using Python libraries.</li>
+                                
+                                <li>Cleaned and analyzed datasets to improve model performance and accuracy.</li>
+                                
+                                <li>Gained hands-on exposure to real-world ML project pipelines and collaboration practices.</li>
+                                
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>

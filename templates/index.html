@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS2 | {{ cv.name }} | PROFILE</title>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Rajdhani for CS headers, Inter for body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rajdhani:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <!-- Canvas for Particle Background -->
+    <canvas id="cs-particles"
+        style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: -1;"></canvas>
+
+    <!-- Cinematic Background -->
+    <div class="cs-background"></div>
+
+    <!-- Custom Crosshair -->
+    <div id="cs-crosshair">
+        <div class="cs-line cs-top"></div>
+        <div class="cs-line cs-right"></div>
+        <div class="cs-line cs-bottom"></div>
+        <div class="cs-line cs-left"></div>
+    </div>
+
+    <!-- Main Game Container -->
+    <div class="cs-container">
+
+        <!-- Top Menu NavBar -->
+        <header class="cs-header">
+            <div class="cs-logo">
+                <i class="fa-solid fa-shield-halved" style="color: var(--cs-ct-blue); margin-right: 10px;"></i>
+                <span>{{ cv.name.split(' ')[0] }}</span>
+            </div>
+            <nav class="cs-nav">
+                <a href="#profile" class="cs-nav-item active"><i class="fa-solid fa-user"></i> PROFILE</a>
+                <a href="#loadout" class="cs-nav-item"><i class="fa-solid fa-gun"></i> LOADOUT</a>
+                <a href="#arsenal" class="cs-nav-item"><i class="fa-solid fa-crosshairs"></i> ARSENAL</a>
+                <a href="#history" class="cs-nav-item"><i class="fa-solid fa-clock-rotate-left"></i> HISTORY</a>
+            </nav>
+            <div class="cs-user-menu">
+                <div class="cs-rankbox">GLOBAL ELITE DEV</div>
+                <a href="{{ cv.github }}" class="cs-btn-connect" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+                <a href="{{ url_for('contact') }}" class="cs-btn-connect"><i class="fa-solid fa-satellite-dish"></i>
+                    CONNECT</a>
+            </div>
+        </header>
+
+        <div class="cs-content-wrapper">
+            <!-- Left Side / Player Model Area (Hero) -->
+            <section id="profile" class="cs-hero scroll-hidden">
+                <div class="cs-hero-panel cs-glass-panel">
+                    <h1 class="cs-player-name">{{ cv.name }}</h1>
+                    <h2 class="cs-player-title"><i class="fa-solid fa-star"></i> {{ cv.title }}</h2>
+                    <p class="cs-player-desc">{{ cv.summary }}</p>
+
+                    <div class="cs-stats-row">
+                        {% for strength in cv.strengths[:4] %}
+                        <div class="cs-stat-box">
+                            <span class="cs-stat-label">SKILL</span>
+                            <span class="cs-stat-value">{{ strength }}</span>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+
+            <!-- Right Side Content Area -->
+            <div class="cs-main-panels">
+
+                <!-- Technical Expertise (Loadout) -->
+                <section id="loadout" class="cs-section scroll-hidden slide-right">
+                    <div class="cs-section-header">
+                        <h2><i class="fa-solid fa-briefcase"></i> LOADOUT / EXPERTISE</h2>
+                        <div class="cs-header-line"></div>
+                    </div>
+                    <div class="cs-loadout-grid">
+                        {% for category, skills in cv.skills.items() %}
+                        <div
+                            class="cs-glass-panel cs-loadout-item scroll-hidden stagger-{% if loop.index <= 6 %}{{ loop.index }}{% else %}6{% endif %}">
+                            <h3>{{ category }}</h3>
+                            <div class="cs-skill-tags">
+                                {% for skill in skills %}
+                                <span class="cs-tag">{{ skill }}</span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </section>
+
+                <!-- Projects (Arsenal) -->
+                <section id="arsenal" class="cs-section scroll-hidden slide-up">
+                    <div class="cs-section-header">
+                        <h2><i class="fa-solid fa-crosshairs"></i> RECENT DEPLOYMENTS</h2>
+                        <div class="cs-header-line"></div>
+                    </div>
+                    <div class="cs-arsenal-list">
+                        {% for project in cv.projects %}
+                        <div
+                            class="cs-glass-panel cs-project-card scroll-hidden stagger-{% if loop.index <= 6 %}{{ loop.index }}{% else %}6{% endif %}">
+                            <div class="cs-project-top">
+                                <h3>{{ project.name }}</h3>
+                                <span class="cs-status-indicator active">ONLINE</span>
+                            </div>
+                            <p class="cs-project-desc">{{ project.description[0] }}</p>
+                            <div class="cs-project-tech">
+                                {% for tech in project.tech[:5] %}
+                                <span>{{ tech }}</span>
+                                {% if not loop.last %} • {% endif %}
+                                {% endfor %}
+                            </div>
+                            <div class="cs-project-actions">
+                                {% if project.repo %}
+                                <a href="{{ project.repo }}" class="cs-btn-view" target="_blank" rel="noopener">REPO <i class="fa-solid fa-code"></i></a>
+                                {% endif %}
+                                {% if project.demo %}
+                                <a href="{{ project.demo }}" class="cs-btn-view" target="_blank" rel="noopener">DEMO <i class="fa-solid fa-desktop"></i></a>
+                                {% endif %}
+                                {% if project.live %}
+                                <a href="{{ project.live }}" class="cs-btn-view" target="_blank" rel="noopener">LIVE <i class="fa-solid fa-globe"></i></a>
+                                {% endif %}
+                                {% if not project.repo and not project.demo and not project.live %}
+                                <a href="#" class="cs-btn-view">INSPECT <i class="fa-solid fa-magnifying-glass"></i></a>
+                                {% endif %}
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </section>
+
+                <!-- Experience (Match History) -->
+                <section id="history" class="cs-section scroll-hidden slide-left">
+                    <div class="cs-section-header">
+                        <h2><i class="fa-solid fa-clock-rotate-left"></i> SERVICE RECORD</h2>
+                        <div class="cs-header-line"></div>
+                    </div>
+                    <div class="cs-history-list">
+                        {% for job in cv.experience %}
+                        <div
+                            class="cs-glass-panel cs-match-card scroll-hidden stagger-{% if loop.index <= 6 %}{{ loop.index }}{% else %}6{% endif %}">
+                            <div class="cs-match-header">
+                                <h3 class="cs-match-role">{{ job.role }}</h3>
+                                <span class="cs-match-result">WIN • {{ job.duration }}</span>
+                            </div>
+                            <h4 class="cs-match-map"><i class="fa-solid fa-map-location-dot"></i> {{ job.company }}</h4>
+                            <ul class="cs-match-details">
+                                {% for detail in job.details %}
+                                <li>{{ detail }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>
